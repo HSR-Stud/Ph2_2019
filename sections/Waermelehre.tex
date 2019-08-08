@@ -73,13 +73,13 @@
 			\begin{flushleft}
 				Wird die thermische Ausdehnung behindert, treten mechanische Spannungen auf.
 			\end{flushleft}
-			\renewcommand{\arraystretch}{2.5}
+			\renewcommand{\arraystretch}{2}
 			\begin{tabular}{ p{4cm} | p{7cm}}
-				$\sigma = E \dfrac{\Delta l}{l_0} = E \alpha \Delta T$	&	$\sigma$ = thermische Spannung in $\frac{N}{m^2}$\\
+				$\sigma = E \frac{\Delta l}{l_0} = E \alpha \Delta T$	&	$\sigma$ = thermische Spannung in $\frac{N}{m^2}$\\
+				$\epsilon = \frac{\Delta l}{l_0}$	& $E$ = Elastizitätsmodul in $\frac{N}{m^2}$\\
 			\end{tabular}
 			\renewcommand{\arraystretch}{1.5}
 			\begin{tabular}{ p{4cm} | p{7cm} }
-				& $E$ = Elastizitätsmodul in $\frac{N}{m^2}$\\
 				& $\alpha$ = Längenausdehnungskoeffizient in $\frac{1}{K}$\\
 			\end{tabular} 
 			\renewcommand{\arraystretch}{1}
@@ -347,13 +347,13 @@
 					\item Die Zunahme der inneren Energie eines thermodynamischen Systems ist gleich der Summe der von aussen zugeführten Arbeit und der von aussen zugeführt Wärme
 				\end{enumerate}
 				\renewcommand{\arraystretch}{2.5}
-				\begin{tabular}{ p{4cm} | p{7cm}}
+				\begin{tabular}{ p{5cm} | p{7cm}}
 					$\mathrm{d} U = \delta W + \delta Q$	&	$U$ = Innere Energie in $J$\\
 					$Q_{Ab} = Q_{Zu}$	& $W$ = Arbeit in $J$\\
 				\end{tabular}
 				\renewcommand{\arraystretch}{1.5}
 				\newline
-				\begin{tabular}{ p{4cm} | p{7cm} }
+				\begin{tabular}{ p{5cm} | p{7cm} }
 					& $Q$ = Wärme in $J$\\
 					& $Q_{Ab}$ = Abgegebene Wärme in $J$\\
 					& $Q_{Zu}$ = Zugeführte Wärme in $J$\\
@@ -366,14 +366,14 @@
 		\begin{minipage}[t]{18cm}
 			\subsubsection{Spezifische und molare Wärmekapazität}
 				\renewcommand{\arraystretch}{2.5}
-				\begin{tabular}{ p{4cm} | p{7cm}}
+				\begin{tabular}{ p{5cm} | p{7cm}}
 					$c = \dfrac{C}{m}$	&	$c$ = spezifische Wärmekapazität in $\frac{J}{kg \cdot K}$\\
-					$\delta Q = cm \mathrm{d} T$	&	$C$ = Wärmekapazität in $\frac{J}{K}$\\
-					$C_m = \dfrac{c}{n} = \dfrac{MC}{m} = Mc$ & $C_m$ = molare Wärmekapazität in $\frac{J}{mol \cdot K}$
+					$Q = c \cdot m \cdot \Delta T$	&	$C$ = Wärmekapazität in $\frac{J}{K}$\\
+					$C_m = \dfrac{c}{n} = \dfrac{M \cdot C}{m} = M \cdot c$ & $C_m$ = molare Wärmekapazität in $\frac{J}{mol \cdot K}$
 				\end{tabular}
 				\renewcommand{\arraystretch}{1.5}
 				\newline
-				\begin{tabular}{ p{4cm} | p{7cm} }
+				\begin{tabular}{ p{5cm} | p{7cm} }
 					& $Q$ = Wärme in $J$\\
 					& $n$ = Stoffmenge = Anzahl Mol\\
 					& $M$ = Molmasse in $kg$\\
@@ -386,16 +386,32 @@
 		\begin{minipage}[t]{18cm}
 			\subsubsection{Verbrennungsenergie}
 				\renewcommand{\arraystretch}{2.5}
-				\begin{tabular}{ p{4cm} | p{7cm}}
+				\begin{tabular}{ p{5cm} | p{7cm}}
 					$H_f = \dfrac{Q}{m}$	&	$H_f$ = Heizwert in $\frac{J}{kg}$\\
 					$H_g = \dfrac{Q}{V}$	&	$H_G$ = Brennwert in $\frac{J}{m^3}$\\
 				\end{tabular}
 				\renewcommand{\arraystretch}{1.5}
 				\newline
-				\begin{tabular}{ p{4cm} | p{7cm} }
+				\begin{tabular}{ p{5cm} | p{7cm} }
 					& $Q$ = Wärme in $J$\\
 				\end{tabular} 
 				\renewcommand{\arraystretch}{1}
+		\end{minipage}
+		\newline
+		\newline
+		\newline
+		\begin{minipage}[t]{18cm}
+			\subsubsection{Mischtemperatur}
+			\renewcommand{\arraystretch}{2.5}
+			\begin{tabular}{ p{5cm} | p{7cm}}
+				$T_{end} = \dfrac{m_1 \cdot c_1 \cdot T_1 + m_2 \cdot c_2 \cdot T_2}{m_1 \cdot c_1 + m_2 \cdot c_2}$	&	$T_{end}$ = Mischtemperatur in $K$\\
+			\end{tabular}
+			\renewcommand{\arraystretch}{1.5}
+			\newline
+			\begin{tabular}{ p{5cm} | p{7cm} }
+				&	$c_i$ = spezifische Wärmekapazität in $\frac{J}{kg \cdot K}$\\
+			\end{tabular} 
+			\renewcommand{\arraystretch}{1}
 		\end{minipage}
 	
 	\newpage
@@ -416,17 +432,21 @@
 		\end{minipage}
 		\newline
 		\newline
-		\subsubsection{Phasendiagramm}
-		\begin{minipage}[t]{7cm}
-			\vspace{-\ht\strutbox}\includegraphics[width=7cm]{./bilder/Phasendiagramm.png}
-		\end{minipage}
-		\begin{minipage}[t][7cm][t]{10cm}
-			\vspace{2.3cm}
+		\newline
+		\begin{minipage}[t]{9cm}
+			\subsubsection{Phasendiagramm}
+			\vspace{0.5cm}
+			\vspace{-\ht\strutbox}\includegraphics[width=7cm]{./bilder/Phasendiagramm.png} \\
 			TP = Tripelpunkt\\
-			KP = Krititische Temperatur\\ \\
+			KP = Krititische Temperatur\\
 			(für Begriffserklärung siehe Kap. \ref{DefinitionenDerWaermelehre} \nameref{DefinitionenDerWaermelehre})
 		\end{minipage}
-		\newline
+		\begin{minipage}[t]{10cm}
+			\subsubsection{Phasenübergangsdiagramm}
+			\vspace{0.5cm}
+			\vspace{-\ht\strutbox}\includegraphics[width=8.3cm]{./bilder/Phasenuebergangsdiagramm.png}
+		\end{minipage}
+		\vspace{1cm}
 		\subsubsection{Luftfeuchtigkeit}
 			\begin{minipage}[t]{13cm}
 				\myparagraph{Formeln von Magnus}
@@ -525,13 +545,14 @@
 					\begin{tabular}{ p{4cm} | p{7cm}}
 						$k = \dfrac{1}{\dfrac{1}{\alpha_i} + \sum\limits_{s}\dfrac{d_s}{\lambda_s} + \dfrac{1}{\alpha_a}}$	&	$k$ = k-Wert, Wärmedurchgangszahl in $\frac{W}{m^2 \cdot K}$\\
 						$j = k \Delta T$	&	$\alpha_i$ = Wärmeübergangszahl innen in $\frac{W}{m^2 \cdot K}$\\
+						$P = k \cdot A \cdot \Delta T$	& $\alpha_a$ = Wärmeübergangszahl aussen in $\frac{W}{m^2 \cdot K}$\\
 					\end{tabular}
 					\renewcommand{\arraystretch}{1.5}
 					\begin{tabular}{ p{4cm} | p{7cm} }
-						& $\alpha_a$ = Wärmeübergangszahl aussen in $\frac{W}{m^2 \cdot K}$\\
 						& $d_s$ = Wandstärke Schicht s in $m$\\
 						& $\lambda_s$ = Wärmeleitfähigkeit Schicht s in $\frac{W}{m \cdot K}$\\
 						& $j$ = Wärmestromdichte in $\frac{W}{m^2}$\\
+						& $P$ = Wärmeleistung in $W$\\
 					\end{tabular} 
 					\renewcommand{\arraystretch}{1}
 			\end{minipage}
@@ -568,7 +589,7 @@
 					\renewcommand{\arraystretch}{2.5}
 					\begin{tabular}{ p{5cm} | p{13cm}}
 						$Q_{tot} = Q_W + Q_L$	&	$Q_{tot}$ = totale Wärme in $J$\\
-						$Q_W = Aj = Ak \Delta T$	&	$Q_W$ = Wärmefluss durch alle Wände in $J$\\
+						$Q_W = A \cdot k \cdot t \cdot \Delta T$	&	$Q_W$ = Wärmefluss durch alle Wände in $J$\\
 						$Q_L = c_l \cdot \rho_l \cdot \dfrac{V}{t} \Delta T $	&	$Q_L$ = Wärmefluss durch Lüftung in $J$\\
 						$Q = (\sum\limits_{w} A_W k_W + \rho \cdot c_l \cdot \dfrac{V}{t}) G$ & $A$ = Wandfläche in $m^2$\\
 					\end{tabular}
