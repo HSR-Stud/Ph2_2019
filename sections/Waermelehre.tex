@@ -14,8 +14,10 @@
 				\item \textbf{Kritische Temperatur:} Temperatur, oberhalb welcher die Verflüssigung eines Gases auch bei noch so hohem Druck nicht mehr möglich ist \label{KritischTemperatur}
 				\item \textbf{Siedepunkt:} Gleichgewichtstemperatur zwischen Wasser und Dampf bei einem Luftdruck von 101 325 Pa
 				\item \textbf{Eispunkt:} Gleichgewichtstemperatur zwischen Eis und luftgesättigtem Wasser bei einem Luftdruck von 101 325 Pa
-				\item \textbf{Stoffmenge $\boldsymbol{n}$:} quantitative Mengenangabe von Stoffen, basierend auf 12g C-12-Kohlenstoff. $n = 6.022 \cdot 10^{23}$ Moleküle; [$n$] = mol (SI-Einheit)
-				\item \textbf{Avogadrokonstante $\boldsymbol{N_A}$:} Anzahl Atome/Moleküle, welche in der Stoffmenge von 1 Mol enthalten sind
+				\item \textbf{Stoffmenge $\boldsymbol{n}$:} Die Stoffmenge $n$ gibt indirekt die Teilchenzahl (Atome, Moleküle, Ionen etc.) einer Stoffportion an. So enthält ein Mol ($n=1mol$) $6.022 \cdot 10^{23}$ Teilchen. Weiter ist $n$ definiert durch die Anzahl Teilchen [$N$] und die Avogadro-Konstante $N_A = 6.022 \cdot 10^{23}$.\\
+				Es gilt: $n = \frac{N}{N_A}$; [$n$] = $mol$ (SI-Einheit)
+				\item \textbf{Avogadrokonstante $\boldsymbol{N_A}$:} Anzahl Atome/Moleküle, welche in der Stoffmenge von 1 Mol enthalten sind.\\
+				$N_A = 6.022 \cdot 10^{23}$; [$N_A$] = $mol^{-1}$
 				\item \textbf{Extensive Grössen:} hängen von der Substanzmenge ab (z.B. Volumen, Stoffmenge)
 				\item \textbf{Intensive Grössen:} sind von der Substanzmenge unabhängig (z.B. Temperatur)
 				\item \textbf{Spezifische Grössen:} sind extensive Grössen pro Stoffmenge (z.B. Volumen/mol)
@@ -118,13 +120,13 @@
 			\end{flushleft}
 			\renewcommand{\arraystretch}{2.5}
 			\begin{tabular}{ p{5cm} | p{7cm}}
-				$\dfrac{pV}{T} = konst$	&	$N$ = Anzahl Moleküle\\
-				$pV = N k T = n \underbrace{N_A k}_R T = \dfrac{m}{M} R T$	&	$k$ = Boltzmann-Konstante = $1.381 \cdot 10^{-23} \frac{J}{K}$\\
+				$\dfrac{p_1 \cdot V_1}{T_1} = \dfrac{p_2 \cdot V_2}{T_2}$ &	$N$ = Anzahl Moleküle\\
+				$\dfrac{p \cdot V}{T} = konst$ & $k$ = Boltzmann-Konstante = $1.381 \cdot 10^{-23} \frac{J}{K}$\\
+				$pV = N k T = n \underbrace{N_A k}_R T = \dfrac{m}{M} R T$	& $n$ = Anzahl Mole\\
 			\end{tabular}
 			\renewcommand{\arraystretch}{1.5}
 			\begin{tabular}{ p{5cm} | p{7cm} }
 				& $N_A$ = Avogadro-Konstante = $6.022 \cdot 10^{23}$\\
-				& $n$ = Anzahl Mole\\
 				& $R$ = Universelle Gaskonstante = $8.314 \frac{J}{mol \cdot K}$\\
 				& $m$ = Masse vom Gas in $kg$\\
 				& $M$ = Molmasse in $kg$\\
@@ -136,7 +138,7 @@
 		\end{minipage}
 		\newline
 		\subsubsection{Gemische idealer Gase}
-			\begin{minipage}[t]{10cm}
+			\begin{minipage}{10cm}
 				\myparagraph{Gesetz von Dalton}
 					\begin{flushleft}
 						In einem Gasgemisch ist die Summe der Partialdrücke $p_i$ gleich dem Gesamtdruck $p$.
@@ -153,7 +155,7 @@
 					\end{tabular} 
 					\renewcommand{\arraystretch}{1}
 			\end{minipage}
-			\begin{minipage}[t]{10cm}
+			\begin{minipage}{10cm}
 				\vspace{-\ht\strutbox}\includegraphics[width=9cm]{./bilder/GemischIdealerGase.png}
 			\end{minipage}
 		
@@ -212,13 +214,13 @@
 		\newline
 		\newline
 		\begin{minipage}[t]{10cm}
-			\subsubsection{Äquipartiotionsgesetz}
+			\subsubsection{Äquipartitionsgesetz}
 				\renewcommand{\arraystretch}{2.5}
-				\begin{tabular}{ p{2cm} | p{7cm}}
+				\begin{tabular}{ p{4cm} | p{7cm}}
 					$\overline{E} = \dfrac{f}{2}kT$	&	$\overline{E}$ = Gesamte mittlere Energie des Moleküls in $J$\\
 				\end{tabular}
 				\renewcommand{\arraystretch}{1.5}
-				\begin{tabular}{ p{2cm} | p{7cm} }
+				\begin{tabular}{ p{4cm} | p{7cm} }
 					& $f$ = Anzahl Freiheitsgrade des Moleküls\\
 					& $k$ = Boltzmannkonstannte =  $1.381 \cdot 10^{-23} \frac{J}{K}$\\
 				\end{tabular} 
@@ -327,11 +329,11 @@
 				\myparagraph{Viskosität}
 					\newline
 					\renewcommand{\arraystretch}{2.5}
-					\begin{tabular}{ p{4cm} | p{7cm}}
+					\begin{tabular}{ p{3cm} | p{7cm}}
 						$\eta = \dfrac{1}{3} \overline{v} \overline{l} \rho$	&	$\eta$ = Viskosität in $Pa \cdot s = \frac{N \cdot s}{m^2}$\\
 					\end{tabular}
 					\renewcommand{\arraystretch}{1.5}
-					\begin{tabular}{ p{4cm} | p{10cm} }
+					\begin{tabular}{ p{3cm} | p{10cm} }
 						& $\overline{v}$ = Mittlere Geschwindigkeit in $\frac{m}{s}$\\
 						& $\overline{l}$ = mittlere freie Weglänge in $m$\\
 						& $\rho$ = Dichte Fluid in $\frac{kg}{m^3}$\\
@@ -451,11 +453,11 @@
 			\begin{minipage}[t]{13cm}
 				\myparagraph{Formeln von Magnus}
 					\renewcommand{\arraystretch}{3}
-					\begin{tabular}{ p{6.5cm} | p{9cm}}
+					\begin{tabular}{ p{7cm} | p{9cm}}
 						$\vartheta \geq 0 $\textdegree$ C$: \quad $p_s = p_{s0} \cdot 10^{\frac{7.5 \vartheta}{\vartheta +237}}$	&	$\vartheta$ = Temperatur in \textdegree $C$\\
 						$\vartheta \leq 0 $\textdegree$ C$: \quad $p_s = p_{s0} \cdot 10^{\frac{9.5 \vartheta}{\vartheta +265.5}}$	&	$\vartheta_d$ = Taupunkts-Temperatur in \textdegree $C$\\
 						$p_s \geq 6.107hPa$: \quad $\vartheta = \dfrac{237 \cdot \log{(\frac{p_s}{6.107})}}{7.5 - \log{(\frac{p_s}{6.107})}}$	&	$p_s$ = Sättigungsdruck in $hPa$\\
-						$p_s \leq 6.107hPa$: \quad $\vartheta = \dfrac{265.5 \cdot \log{(\frac{p_s}{6.107}})}{9.5 - \log{(\frac{p_s}{6.107})}}$	&	$p_{s0}$ = Dampfdruck in $hPa$ $(= 6.107hPa$ bei $0 $\textdegree$ C)$\\
+						$p_s \leq 6.107hPa$: \quad $\vartheta = \dfrac{265.5 \cdot \log{(\frac{p_s}{6.107}})}{9.5 - \log{(\frac{p_s}{6.107})}}$	&	$p_{s0}$ = Dampfdruck in $hPa$ $(= 6.107$ bei $0 $\textdegree$ C)$\\
 						$\vartheta_d = \dfrac{237 \cdot (\log{(f_r)} + \frac{7.5 \cdot \vartheta}{\vartheta +237})}{7.5 - (\log{(f_r)} + \frac{7.5 \cdot \vartheta}{\vartheta +237})}$	& $f_r$ = relative Luftfeuchtigkeit (dimensionslos)\\
 					\end{tabular}
 					\renewcommand{\arraystretch}{1}
